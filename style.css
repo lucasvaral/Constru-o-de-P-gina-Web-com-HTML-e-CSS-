@@ -1,0 +1,166 @@
+/* ===== Variáveis CSS ===== */
+:root {
+  --cor-fundo: #f6f8fa;
+  --cor-texto: #1f2328;
+  --cor-primaria: #1f883d;
+  --cor-primaria-hover: #1a7f37;
+  --cor-borda: #d0d7de;
+  --cor-link: #0969da;
+  --fonte-base: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --espaco-sm: 0.5rem;
+  --espaco-md: 1rem;
+  --espaco-lg: 2rem;
+}
+
+/* ===== Reset simples ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonte-base);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+
+/* Seletor de classe */
+.site-header {
+  display: flex;
+  justify-content: center;
+  padding: var(--espaco-md);
+}
+
+.logo img {
+  display: block;
+}
+
+/* Seletor descendente (imagem dentro do link .logo) */
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Layout principal: mobile first, empilhado (Flexbox em coluna) */
+.login-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espaco-lg);
+  padding: var(--espaco-md);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 340px;
+  background: #ffffff;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  padding: var(--espaco-lg);
+}
+
+.login-card h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: var(--espaco-lg);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+}
+
+.form-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Seletor descendente (inputs dentro do form) */
+.login-form input {
+  padding: var(--espaco-sm);
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.forgot-link,
+.signup-hint a {
+  color: var(--cor-link);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* Seletor de pseudo-classe */
+.forgot-link:hover,
+.signup-hint a:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: var(--espaco-sm) var(--espaco-md);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Seletor de pseudo-classe */
+.btn-primary:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+.signup-hint {
+  text-align: center;
+  margin-top: var(--espaco-md);
+  font-size: 0.875rem;
+}
+
+.about-clone {
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #57606a;
+}
+
+.site-footer {
+  text-align: center;
+  padding: var(--espaco-lg) var(--espaco-md);
+  font-size: 0.75rem;
+  color: #57606a;
+}
+
+.site-footer nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espaco-md);
+  margin-bottom: var(--espaco-sm);
+}
+
+.site-footer a {
+  color: #57606a;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
