@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | Clone de Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#" class="logo">
+      <img src="https://via.placeholder.com/32" alt="Logotipo do site">
+    </a>
+  </header>
+
+  <main class="login-main">
+    <section class="login-card" aria-labelledby="login-title">
+      <h1 id="login-title">Acesse sua conta</h1>
+
+      <form class="login-form" action="#" method="post">
+        <div class="form-group">
+          <label for="username">Usuário ou e-mail</label>
+          <input type="text" id="username" name="username" autocomplete="username" required>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group-header">
+            <label for="password">Senha</label>
+            <a href="#" class="forgot-link">Esqueceu a senha?</a>
+          </div>
+          <input type="password" id="password" name="password" autocomplete="current-password" required>
+        </div>
+
+        <button type="submit" class="btn-primary">Entrar</button>
+      </form>
+
+      <p class="signup-hint">
+        Novo por aqui? <a href="#">Crie uma conta</a>.
+      </p>
+    </section>
+
+    <!-- Personalização própria (item 1.5): seção que não existe no site original -->
+    <section class="about-clone" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre este clone</h2>
+      <p>
+        Página desenvolvida como atividade da disciplina de Front-End,
+        reproduzindo a estrutura visual da tela de login do GitHub.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Links do rodapé">
+      <ul>
+        <li><a href="#">Termos</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Segurança</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Clone de estudo — Trabalho G1 Front-End</p>
+  </footer>
+
+</body>
+</html>
