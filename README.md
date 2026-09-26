@@ -15,6 +15,15 @@ Site utilizado como referência: [Página de login do GitHub](https://github.com
 - [x] **1.3 – CSS: seletores, box model e variáveis:** uso de seletores de classe (`.login-card`), descendente (`.login-form input`) e pseudo-classe (`:hover`). Variáveis CSS definidas em `:root` para cores e espaçamentos.
 - [x] **1.4 – Responsividade:** CSS escrito mobile first, com Flexbox para organizar os elementos, e uma media query `min-width: 768px` ajustando o layout para desktop.
 - [x] **1.5 – Personalização e originalidade:** seção "Sobre este clone", que não existe na página original, foi adicionada explicando o contexto acadêmico do projeto.
+
 ## Validação HTML
+
 - [x] **Validação W3C:** o `index.html` foi validado em [validator.w3.org](https://validator.w3.org/), sem erros ou warnings.
 
+## Prints Comparativos
+
+![Página original do GitHub](assets/original.png)
+
+![Meu clone](assets/meu_clone.png)
+
+*Simplificações em relação ao original: não foram incluídos os botões de login social (Google/Apple), o link de passkey e o ícone Octocat, focando no formulário principal de login por usuário/senha.*
