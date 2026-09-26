@@ -48,14 +48,13 @@ body {
 .login-card {
   width: 100%;
   max-width: 340px;
-  background: #ffffff;
-  border: 1px solid var(--cor-borda);
-  border-radius: 6px;
-  padding: var(--espaco-lg);
+  background: transparent;
+  padding: var(--espaco-lg) 0;
 }
 
 .login-card h1 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   text-align: center;
   margin-bottom: var(--espaco-lg);
 }
