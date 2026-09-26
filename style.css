@@ -32,16 +32,10 @@ body {
   padding: var(--espaco-md);
 }
 
-.logo img {
-  display: block;
+.logo-icon {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
 }
-
-
-.logo img {
-  width: 32px;
-  height: 32px;
-}
-
 
 .login-main {
   display: flex;
